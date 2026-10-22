@@ -1,0 +1,22 @@
+[
+  {
+    "dataPostId": 1,
+    "expectedUserId": 1
+  },
+  {
+    "dataPostId": 5,
+    "expectedUserId": 1
+  },
+  {
+    "dataPostId": 11,
+    "expectedUserId": 2
+  },
+  {
+    "dataPostId": 50,
+    "expectedUserId": 5
+  },
+  {
+    "dataPostId": 100,
+    "expectedUserId": 10
+  }
+]

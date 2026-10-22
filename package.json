@@ -1,0 +1,15 @@
+{
+  "name": "postman-api-tests",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Postman collection with automated API checks, run from the command line with Newman",
+  "scripts": {
+    "test": "newman run collections/jsonplaceholder.postman_collection.json -e environments/jsonplaceholder.postman_environment.json --folder Users --folder Posts --folder \"Scenario - chained requests\" -r cli,junit,htmlextra --reporter-junit-export reports/junit.xml --reporter-htmlextra-export reports/index.html --reporter-htmlextra-title \"JSONPlaceholder API tests\"",
+    "test:data": "newman run collections/jsonplaceholder.postman_collection.json -e environments/jsonplaceholder.postman_environment.json --folder \"Data-driven\" -d data/posts.json -r cli,junit,htmlextra --reporter-junit-export reports/junit-data.xml --reporter-htmlextra-export reports/data-driven.html --reporter-htmlextra-title \"JSONPlaceholder data-driven run\"",
+    "test:all": "npm test && npm run test:data"
+  },
+  "devDependencies": {
+    "newman": "^6.2.1",
+    "newman-reporter-htmlextra": "^1.23.1"
+  }
+}

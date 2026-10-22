@@ -1,0 +1,70 @@
+name: Postman API Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: "0 7 * * 1-5"   # weekdays 07:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  newman:
+    name: Run Newman
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write        # publish the HTML report to the gh-pages branch
+    concurrency:
+      group: newman-${{ github.ref }}
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install Newman and the HTML reporter
+        run: npm install
+
+      - name: Collection run (Users, Posts, chained scenario)
+        run: npm test
+
+      - name: Data-driven run (one iteration per row of data/posts.json)
+        if: ${{ !cancelled() }}
+        run: npm run test:data
+
+      - name: Upload reports
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: newman-reports
+          path: reports
+          if-no-files-found: warn
+          retention-days: 14
+
+      - name: Publish HTML report to GitHub Pages (gh-pages branch)
+        if: ${{ !cancelled() && github.ref == 'refs/heads/main' && github.event_name != 'pull_request' }}
+        run: |
+          set -e
+          git clone --depth 1 --branch gh-pages \
+            "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" gh-pages 2>/dev/null || {
+            mkdir gh-pages && cd gh-pages
+            git init -q -b gh-pages
+            git remote add origin "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git"
+            cd ..
+          }
+          cd gh-pages
+          find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          cp -r ../reports/. .
+          touch .nojekyll
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Newman report for ${GITHUB_SHA::7} (run #${GITHUB_RUN_NUMBER})" || { echo "Nothing to publish"; exit 0; }
+          git push origin HEAD:gh-pages

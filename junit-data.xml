@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="JSONPlaceholder API tests" tests="5" time="0.421">
-  <testsuite name="Data-driven / GET post {{dataPostId}} belongs to user {{expectedUserId}}" id="5416fcc3-7755-484a-8dd0-8ea06c1ae114" timestamp="2026-10-29T13:57:14.677Z" tests="6" failures="0" errors="0" time="0.084">
-    <testcase name="Server did not fail (status &lt; 500)" time="0.054" classname="DataDrivenGetPostDataPostIdBelongsToUserExpectedUserId"/>
-    <testcase name="Response time is below 3000 ms" time="0.054" classname="DataDrivenGetPostDataPostIdBelongsToUserExpectedUserId"/>
-    <testcase name="Status code is 200" time="0.054" classname="DataDrivenGetPostDataPostIdBelongsToUserExpectedUserId"/>
-    <testcase name="Content-Type is JSON" time="0.054" classname="DataDrivenGetPostDataPostIdBelongsToUserExpectedUserId"/>
-    <testcase name="Id matches the data row" time="0.054" classname="DataDrivenGetPostDataPostIdBelongsToUserExpectedUserId"/>
-    <testcase name="Author matches the data row" time="0.054" classname="DataDrivenGetPostDataPostIdBelongsToUserExpectedUserId"/>
+<testsuites name="JSONPlaceholder API tests" tests="5" time="0.178">
+  <testsuite name="Data-driven / GET post {{dataPostId}} belongs to user {{expectedUserId}}" id="797d0cf0-85dd-465a-ad1a-6eb09caf86aa" timestamp="2026-10-30T13:51:35.883Z" tests="6" failures="0" errors="0" time="0.036">
+    <testcase name="Server did not fail (status &lt; 500)" time="0.059" classname="DataDrivenGetPostDataPostIdBelongsToUserExpectedUserId"/>
+    <testcase name="Response time is below 3000 ms" time="0.059" classname="DataDrivenGetPostDataPostIdBelongsToUserExpectedUserId"/>
+    <testcase name="Status code is 200" time="0.059" classname="DataDrivenGetPostDataPostIdBelongsToUserExpectedUserId"/>
+    <testcase name="Content-Type is JSON" time="0.059" classname="DataDrivenGetPostDataPostIdBelongsToUserExpectedUserId"/>
+    <testcase name="Id matches the data row" time="0.059" classname="DataDrivenGetPostDataPostIdBelongsToUserExpectedUserId"/>
+    <testcase name="Author matches the data row" time="0.059" classname="DataDrivenGetPostDataPostIdBelongsToUserExpectedUserId"/>
   </testsuite>
 </testsuites>

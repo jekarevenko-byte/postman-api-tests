@@ -1,162 +1,162 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="JSONPlaceholder API tests" tests="22" time="1.144">
-  <testsuite name="Users / GET all users" id="6ecb8448-f04f-4314-9715-313f8845d13a" timestamp="2026-11-05T15:11:12.654Z" tests="7" failures="0" errors="0" time="0.097">
-    <testcase name="Server did not fail (status &lt; 500)" time="0.097" classname="UsersGetAllUsers"/>
-    <testcase name="Response time is below 3000 ms" time="0.097" classname="UsersGetAllUsers"/>
-    <testcase name="Status code is 200" time="0.097" classname="UsersGetAllUsers"/>
-    <testcase name="Content-Type is JSON" time="0.097" classname="UsersGetAllUsers"/>
-    <testcase name="Returns an array of 10 users" time="0.097" classname="UsersGetAllUsers"/>
-    <testcase name="Every user matches the JSON schema" time="0.097" classname="UsersGetAllUsers"/>
-    <testcase name="User ids are unique" time="0.097" classname="UsersGetAllUsers"/>
+<testsuites name="JSONPlaceholder API tests" tests="22" time="1.590">
+  <testsuite name="Users / GET all users" id="449db11b-0729-4964-92d5-414f27e6925c" timestamp="2026-11-06T14:48:12.948Z" tests="7" failures="0" errors="0" time="0.156">
+    <testcase name="Server did not fail (status &lt; 500)" time="0.156" classname="UsersGetAllUsers"/>
+    <testcase name="Response time is below 3000 ms" time="0.156" classname="UsersGetAllUsers"/>
+    <testcase name="Status code is 200" time="0.156" classname="UsersGetAllUsers"/>
+    <testcase name="Content-Type is JSON" time="0.156" classname="UsersGetAllUsers"/>
+    <testcase name="Returns an array of 10 users" time="0.156" classname="UsersGetAllUsers"/>
+    <testcase name="Every user matches the JSON schema" time="0.156" classname="UsersGetAllUsers"/>
+    <testcase name="User ids are unique" time="0.156" classname="UsersGetAllUsers"/>
   </testsuite>
-  <testsuite name="Users / GET user by id" id="03d4a883-cb2e-4972-a437-3e6042509745" timestamp="2026-11-05T15:11:12.654Z" tests="7" failures="0" errors="0" time="0.036">
-    <testcase name="Server did not fail (status &lt; 500)" time="0.036" classname="UsersGetUserById"/>
-    <testcase name="Response time is below 3000 ms" time="0.036" classname="UsersGetUserById"/>
-    <testcase name="Status code is 200" time="0.036" classname="UsersGetUserById"/>
-    <testcase name="Content-Type is JSON" time="0.036" classname="UsersGetUserById"/>
-    <testcase name="Id matches the requested one" time="0.036" classname="UsersGetUserById"/>
-    <testcase name="Body matches the JSON schema" time="0.036" classname="UsersGetUserById"/>
-    <testcase name="Email has a valid format" time="0.036" classname="UsersGetUserById"/>
+  <testsuite name="Users / GET user by id" id="6d051633-ba1e-410f-afda-14de08e4348c" timestamp="2026-11-06T14:48:12.948Z" tests="7" failures="0" errors="0" time="0.028">
+    <testcase name="Server did not fail (status &lt; 500)" time="0.028" classname="UsersGetUserById"/>
+    <testcase name="Response time is below 3000 ms" time="0.028" classname="UsersGetUserById"/>
+    <testcase name="Status code is 200" time="0.028" classname="UsersGetUserById"/>
+    <testcase name="Content-Type is JSON" time="0.028" classname="UsersGetUserById"/>
+    <testcase name="Id matches the requested one" time="0.028" classname="UsersGetUserById"/>
+    <testcase name="Body matches the JSON schema" time="0.028" classname="UsersGetUserById"/>
+    <testcase name="Email has a valid format" time="0.028" classname="UsersGetUserById"/>
   </testsuite>
-  <testsuite name="Users / GET user - not found (negative)" id="471c6650-7e4c-43c7-8915-99bfa87bdc95" timestamp="2026-11-05T15:11:12.654Z" tests="4" failures="0" errors="0" time="0.066">
-    <testcase name="Server did not fail (status &lt; 500)" time="0.066" classname="UsersGetUserNotFoundNegative"/>
-    <testcase name="Response time is below 3000 ms" time="0.066" classname="UsersGetUserNotFoundNegative"/>
-    <testcase name="Status code is 404" time="0.066" classname="UsersGetUserNotFoundNegative"/>
-    <testcase name="Body is an empty object" time="0.066" classname="UsersGetUserNotFoundNegative"/>
+  <testsuite name="Users / GET user - not found (negative)" id="5e47c14e-2506-4fa5-96a2-92c21670fb6f" timestamp="2026-11-06T14:48:12.948Z" tests="4" failures="0" errors="0" time="0.098">
+    <testcase name="Server did not fail (status &lt; 500)" time="0.098" classname="UsersGetUserNotFoundNegative"/>
+    <testcase name="Response time is below 3000 ms" time="0.098" classname="UsersGetUserNotFoundNegative"/>
+    <testcase name="Status code is 404" time="0.098" classname="UsersGetUserNotFoundNegative"/>
+    <testcase name="Body is an empty object" time="0.098" classname="UsersGetUserNotFoundNegative"/>
   </testsuite>
-  <testsuite name="Users / POST create user" id="552e4628-715c-44f4-8be8-17466cd066b2" timestamp="2026-11-05T15:11:12.654Z" tests="6" failures="0" errors="0" time="0.070">
-    <testcase name="Server did not fail (status &lt; 500)" time="0.070" classname="UsersPostCreateUser"/>
-    <testcase name="Response time is below 3000 ms" time="0.070" classname="UsersPostCreateUser"/>
-    <testcase name="Status code is 201" time="0.070" classname="UsersPostCreateUser"/>
-    <testcase name="Id is assigned" time="0.070" classname="UsersPostCreateUser"/>
-    <testcase name="Sent name is echoed back" time="0.070" classname="UsersPostCreateUser"/>
-    <testcase name="Sent email is echoed back" time="0.070" classname="UsersPostCreateUser"/>
+  <testsuite name="Users / POST create user" id="ebea2d53-1674-423a-8a83-8120cd9a7292" timestamp="2026-11-06T14:48:12.948Z" tests="6" failures="0" errors="0" time="0.082">
+    <testcase name="Server did not fail (status &lt; 500)" time="0.082" classname="UsersPostCreateUser"/>
+    <testcase name="Response time is below 3000 ms" time="0.082" classname="UsersPostCreateUser"/>
+    <testcase name="Status code is 201" time="0.082" classname="UsersPostCreateUser"/>
+    <testcase name="Id is assigned" time="0.082" classname="UsersPostCreateUser"/>
+    <testcase name="Sent name is echoed back" time="0.082" classname="UsersPostCreateUser"/>
+    <testcase name="Sent email is echoed back" time="0.082" classname="UsersPostCreateUser"/>
   </testsuite>
-  <testsuite name="Users / PUT update user" id="173637f6-253f-4262-b1f7-35004108762f" timestamp="2026-11-05T15:11:12.654Z" tests="6" failures="0" errors="0" time="0.106">
-    <testcase name="Server did not fail (status &lt; 500)" time="0.106" classname="UsersPutUpdateUser"/>
-    <testcase name="Response time is below 3000 ms" time="0.106" classname="UsersPutUpdateUser"/>
-    <testcase name="Status code is 200" time="0.106" classname="UsersPutUpdateUser"/>
-    <testcase name="Content-Type is JSON" time="0.106" classname="UsersPutUpdateUser"/>
-    <testcase name="New name is returned" time="0.106" classname="UsersPutUpdateUser"/>
-    <testcase name="Id is preserved" time="0.106" classname="UsersPutUpdateUser"/>
+  <testsuite name="Users / PUT update user" id="b10184d5-67a8-4fbd-9106-ec451f745562" timestamp="2026-11-06T14:48:12.948Z" tests="6" failures="0" errors="0" time="0.220">
+    <testcase name="Server did not fail (status &lt; 500)" time="0.220" classname="UsersPutUpdateUser"/>
+    <testcase name="Response time is below 3000 ms" time="0.220" classname="UsersPutUpdateUser"/>
+    <testcase name="Status code is 200" time="0.220" classname="UsersPutUpdateUser"/>
+    <testcase name="Content-Type is JSON" time="0.220" classname="UsersPutUpdateUser"/>
+    <testcase name="New name is returned" time="0.220" classname="UsersPutUpdateUser"/>
+    <testcase name="Id is preserved" time="0.220" classname="UsersPutUpdateUser"/>
   </testsuite>
-  <testsuite name="Users / PATCH partially update user" id="c3cc4e63-7471-46e5-b716-335af51e5726" timestamp="2026-11-05T15:11:12.654Z" tests="5" failures="0" errors="0" time="0.061">
-    <testcase name="Server did not fail (status &lt; 500)" time="0.061" classname="UsersPatchPartiallyUpdateUser"/>
-    <testcase name="Response time is below 3000 ms" time="0.061" classname="UsersPatchPartiallyUpdateUser"/>
-    <testcase name="Status code is 200" time="0.061" classname="UsersPatchPartiallyUpdateUser"/>
-    <testcase name="Content-Type is JSON" time="0.061" classname="UsersPatchPartiallyUpdateUser"/>
-    <testcase name="Patched field is returned" time="0.061" classname="UsersPatchPartiallyUpdateUser"/>
+  <testsuite name="Users / PATCH partially update user" id="62b07813-7992-4df8-808e-f9b8e8ca6f84" timestamp="2026-11-06T14:48:12.948Z" tests="5" failures="0" errors="0" time="0.082">
+    <testcase name="Server did not fail (status &lt; 500)" time="0.082" classname="UsersPatchPartiallyUpdateUser"/>
+    <testcase name="Response time is below 3000 ms" time="0.082" classname="UsersPatchPartiallyUpdateUser"/>
+    <testcase name="Status code is 200" time="0.082" classname="UsersPatchPartiallyUpdateUser"/>
+    <testcase name="Content-Type is JSON" time="0.082" classname="UsersPatchPartiallyUpdateUser"/>
+    <testcase name="Patched field is returned" time="0.082" classname="UsersPatchPartiallyUpdateUser"/>
   </testsuite>
-  <testsuite name="Users / DELETE user" id="dcccf667-6d62-4e2a-87d3-f724e8da58ce" timestamp="2026-11-05T15:11:12.654Z" tests="3" failures="0" errors="0" time="0.059">
-    <testcase name="Server did not fail (status &lt; 500)" time="0.059" classname="UsersDeleteUser"/>
-    <testcase name="Response time is below 3000 ms" time="0.059" classname="UsersDeleteUser"/>
-    <testcase name="Status code is 200 or 204" time="0.059" classname="UsersDeleteUser"/>
+  <testsuite name="Users / DELETE user" id="16c42cac-ab2d-4073-84ff-141f2a1e90a2" timestamp="2026-11-06T14:48:12.948Z" tests="3" failures="0" errors="0" time="0.081">
+    <testcase name="Server did not fail (status &lt; 500)" time="0.081" classname="UsersDeleteUser"/>
+    <testcase name="Response time is below 3000 ms" time="0.081" classname="UsersDeleteUser"/>
+    <testcase name="Status code is 200 or 204" time="0.081" classname="UsersDeleteUser"/>
   </testsuite>
-  <testsuite name="Users / GET posts of a user" id="7c93f488-8798-43b1-bf65-b76c0f920256" timestamp="2026-11-05T15:11:12.654Z" tests="6" failures="0" errors="0" time="0.058">
-    <testcase name="Server did not fail (status &lt; 500)" time="0.058" classname="UsersGetPostsOfAUser"/>
-    <testcase name="Response time is below 3000 ms" time="0.058" classname="UsersGetPostsOfAUser"/>
-    <testcase name="Status code is 200" time="0.058" classname="UsersGetPostsOfAUser"/>
-    <testcase name="Content-Type is JSON" time="0.058" classname="UsersGetPostsOfAUser"/>
-    <testcase name="User has posts" time="0.058" classname="UsersGetPostsOfAUser"/>
-    <testcase name="All posts belong to the user" time="0.058" classname="UsersGetPostsOfAUser"/>
+  <testsuite name="Users / GET posts of a user" id="f3279ccb-2a4c-4611-b814-c30ecfb57b38" timestamp="2026-11-06T14:48:12.948Z" tests="6" failures="0" errors="0" time="0.027">
+    <testcase name="Server did not fail (status &lt; 500)" time="0.027" classname="UsersGetPostsOfAUser"/>
+    <testcase name="Response time is below 3000 ms" time="0.027" classname="UsersGetPostsOfAUser"/>
+    <testcase name="Status code is 200" time="0.027" classname="UsersGetPostsOfAUser"/>
+    <testcase name="Content-Type is JSON" time="0.027" classname="UsersGetPostsOfAUser"/>
+    <testcase name="User has posts" time="0.027" classname="UsersGetPostsOfAUser"/>
+    <testcase name="All posts belong to the user" time="0.027" classname="UsersGetPostsOfAUser"/>
   </testsuite>
-  <testsuite name="Posts / GET all posts" id="b01ba557-00de-495d-8da4-17f84f729c22" timestamp="2026-11-05T15:11:12.654Z" tests="6" failures="0" errors="0" time="0.030">
-    <testcase name="Server did not fail (status &lt; 500)" time="0.030" classname="PostsGetAllPosts"/>
-    <testcase name="Response time is below 3000 ms" time="0.030" classname="PostsGetAllPosts"/>
-    <testcase name="Status code is 200" time="0.030" classname="PostsGetAllPosts"/>
-    <testcase name="Content-Type is JSON" time="0.030" classname="PostsGetAllPosts"/>
-    <testcase name="Returns 100 posts" time="0.030" classname="PostsGetAllPosts"/>
-    <testcase name="Every post matches the JSON schema" time="0.030" classname="PostsGetAllPosts"/>
+  <testsuite name="Posts / GET all posts" id="449a2b1c-b85e-4c3f-9f76-fe5d6a8ae992" timestamp="2026-11-06T14:48:12.948Z" tests="6" failures="0" errors="0" time="0.024">
+    <testcase name="Server did not fail (status &lt; 500)" time="0.024" classname="PostsGetAllPosts"/>
+    <testcase name="Response time is below 3000 ms" time="0.024" classname="PostsGetAllPosts"/>
+    <testcase name="Status code is 200" time="0.024" classname="PostsGetAllPosts"/>
+    <testcase name="Content-Type is JSON" time="0.024" classname="PostsGetAllPosts"/>
+    <testcase name="Returns 100 posts" time="0.024" classname="PostsGetAllPosts"/>
+    <testcase name="Every post matches the JSON schema" time="0.024" classname="PostsGetAllPosts"/>
   </testsuite>
-  <testsuite name="Posts / GET post by id" id="f4945530-5032-40c3-8cfa-2d821b88532c" timestamp="2026-11-05T15:11:12.654Z" tests="7" failures="0" errors="0" time="0.028">
-    <testcase name="Server did not fail (status &lt; 500)" time="0.028" classname="PostsGetPostById"/>
-    <testcase name="Response time is below 3000 ms" time="0.028" classname="PostsGetPostById"/>
-    <testcase name="Status code is 200" time="0.028" classname="PostsGetPostById"/>
-    <testcase name="Content-Type is JSON" time="0.028" classname="PostsGetPostById"/>
-    <testcase name="Id matches the requested one" time="0.028" classname="PostsGetPostById"/>
-    <testcase name="Body matches the JSON schema" time="0.028" classname="PostsGetPostById"/>
-    <testcase name="Title is not empty" time="0.028" classname="PostsGetPostById"/>
+  <testsuite name="Posts / GET post by id" id="88ded745-f68e-40af-bcd0-1713db846bd5" timestamp="2026-11-06T14:48:12.948Z" tests="7" failures="0" errors="0" time="0.019">
+    <testcase name="Server did not fail (status &lt; 500)" time="0.019" classname="PostsGetPostById"/>
+    <testcase name="Response time is below 3000 ms" time="0.019" classname="PostsGetPostById"/>
+    <testcase name="Status code is 200" time="0.019" classname="PostsGetPostById"/>
+    <testcase name="Content-Type is JSON" time="0.019" classname="PostsGetPostById"/>
+    <testcase name="Id matches the requested one" time="0.019" classname="PostsGetPostById"/>
+    <testcase name="Body matches the JSON schema" time="0.019" classname="PostsGetPostById"/>
+    <testcase name="Title is not empty" time="0.019" classname="PostsGetPostById"/>
   </testsuite>
-  <testsuite name="Posts / GET posts filtered by userId" id="80478f8f-9102-4aa4-b78d-5e7925fc67a2" timestamp="2026-11-05T15:11:12.654Z" tests="6" failures="0" errors="0" time="0.027">
-    <testcase name="Server did not fail (status &lt; 500)" time="0.027" classname="PostsGetPostsFilteredByUserId"/>
-    <testcase name="Response time is below 3000 ms" time="0.027" classname="PostsGetPostsFilteredByUserId"/>
-    <testcase name="Status code is 200" time="0.027" classname="PostsGetPostsFilteredByUserId"/>
-    <testcase name="Content-Type is JSON" time="0.027" classname="PostsGetPostsFilteredByUserId"/>
-    <testcase name="Returns the 10 posts of the user" time="0.027" classname="PostsGetPostsFilteredByUserId"/>
-    <testcase name="All posts belong to userId=1" time="0.027" classname="PostsGetPostsFilteredByUserId"/>
+  <testsuite name="Posts / GET posts filtered by userId" id="9507a6ec-85ec-40a4-8295-e95f8fcf8dc9" timestamp="2026-11-06T14:48:12.948Z" tests="6" failures="0" errors="0" time="0.023">
+    <testcase name="Server did not fail (status &lt; 500)" time="0.023" classname="PostsGetPostsFilteredByUserId"/>
+    <testcase name="Response time is below 3000 ms" time="0.023" classname="PostsGetPostsFilteredByUserId"/>
+    <testcase name="Status code is 200" time="0.023" classname="PostsGetPostsFilteredByUserId"/>
+    <testcase name="Content-Type is JSON" time="0.023" classname="PostsGetPostsFilteredByUserId"/>
+    <testcase name="Returns the 10 posts of the user" time="0.023" classname="PostsGetPostsFilteredByUserId"/>
+    <testcase name="All posts belong to userId=1" time="0.023" classname="PostsGetPostsFilteredByUserId"/>
   </testsuite>
-  <testsuite name="Posts / GET posts filtered by unknown userId (negative)" id="1f8ef085-6bb3-410f-94ab-1b2792ce7909" timestamp="2026-11-05T15:11:12.654Z" tests="5" failures="0" errors="0" time="0.065">
-    <testcase name="Server did not fail (status &lt; 500)" time="0.065" classname="PostsGetPostsFilteredByUnknownUserIdNegative"/>
-    <testcase name="Response time is below 3000 ms" time="0.065" classname="PostsGetPostsFilteredByUnknownUserIdNegative"/>
-    <testcase name="Status code is 200" time="0.065" classname="PostsGetPostsFilteredByUnknownUserIdNegative"/>
-    <testcase name="Content-Type is JSON" time="0.065" classname="PostsGetPostsFilteredByUnknownUserIdNegative"/>
-    <testcase name="Returns an empty array" time="0.065" classname="PostsGetPostsFilteredByUnknownUserIdNegative"/>
+  <testsuite name="Posts / GET posts filtered by unknown userId (negative)" id="030e53d5-aa5e-42a0-99e8-612069a38b23" timestamp="2026-11-06T14:48:12.948Z" tests="5" failures="0" errors="0" time="0.091">
+    <testcase name="Server did not fail (status &lt; 500)" time="0.091" classname="PostsGetPostsFilteredByUnknownUserIdNegative"/>
+    <testcase name="Response time is below 3000 ms" time="0.091" classname="PostsGetPostsFilteredByUnknownUserIdNegative"/>
+    <testcase name="Status code is 200" time="0.091" classname="PostsGetPostsFilteredByUnknownUserIdNegative"/>
+    <testcase name="Content-Type is JSON" time="0.091" classname="PostsGetPostsFilteredByUnknownUserIdNegative"/>
+    <testcase name="Returns an empty array" time="0.091" classname="PostsGetPostsFilteredByUnknownUserIdNegative"/>
   </testsuite>
-  <testsuite name="Posts / GET comments of a post" id="12f1f800-bd48-4d00-9e00-6f4cd6263afd" timestamp="2026-11-05T15:11:12.654Z" tests="7" failures="0" errors="0" time="0.028">
-    <testcase name="Server did not fail (status &lt; 500)" time="0.028" classname="PostsGetCommentsOfAPost"/>
-    <testcase name="Response time is below 3000 ms" time="0.028" classname="PostsGetCommentsOfAPost"/>
-    <testcase name="Status code is 200" time="0.028" classname="PostsGetCommentsOfAPost"/>
-    <testcase name="Content-Type is JSON" time="0.028" classname="PostsGetCommentsOfAPost"/>
-    <testcase name="Post has comments" time="0.028" classname="PostsGetCommentsOfAPost"/>
-    <testcase name="Every comment matches the JSON schema" time="0.028" classname="PostsGetCommentsOfAPost"/>
-    <testcase name="All comments belong to the post" time="0.028" classname="PostsGetCommentsOfAPost"/>
+  <testsuite name="Posts / GET comments of a post" id="93508832-259e-451e-92bb-ae06a02e1aa5" timestamp="2026-11-06T14:48:12.948Z" tests="7" failures="0" errors="0" time="0.031">
+    <testcase name="Server did not fail (status &lt; 500)" time="0.031" classname="PostsGetCommentsOfAPost"/>
+    <testcase name="Response time is below 3000 ms" time="0.031" classname="PostsGetCommentsOfAPost"/>
+    <testcase name="Status code is 200" time="0.031" classname="PostsGetCommentsOfAPost"/>
+    <testcase name="Content-Type is JSON" time="0.031" classname="PostsGetCommentsOfAPost"/>
+    <testcase name="Post has comments" time="0.031" classname="PostsGetCommentsOfAPost"/>
+    <testcase name="Every comment matches the JSON schema" time="0.031" classname="PostsGetCommentsOfAPost"/>
+    <testcase name="All comments belong to the post" time="0.031" classname="PostsGetCommentsOfAPost"/>
   </testsuite>
-  <testsuite name="Posts / GET post - not found (negative)" id="9e8bf90e-9878-4b1b-b3ab-c54fb1e03b0c" timestamp="2026-11-05T15:11:12.654Z" tests="3" failures="0" errors="0" time="0.033">
-    <testcase name="Server did not fail (status &lt; 500)" time="0.033" classname="PostsGetPostNotFoundNegative"/>
-    <testcase name="Response time is below 3000 ms" time="0.033" classname="PostsGetPostNotFoundNegative"/>
-    <testcase name="Status code is 404" time="0.033" classname="PostsGetPostNotFoundNegative"/>
+  <testsuite name="Posts / GET post - not found (negative)" id="1212d24f-0a3c-4adb-8637-58f2e8c71755" timestamp="2026-11-06T14:48:12.948Z" tests="3" failures="0" errors="0" time="0.023">
+    <testcase name="Server did not fail (status &lt; 500)" time="0.023" classname="PostsGetPostNotFoundNegative"/>
+    <testcase name="Response time is below 3000 ms" time="0.023" classname="PostsGetPostNotFoundNegative"/>
+    <testcase name="Status code is 404" time="0.023" classname="PostsGetPostNotFoundNegative"/>
   </testsuite>
-  <testsuite name="Posts / POST create post" id="fe3e2560-282f-4341-93f5-799492621ce0" timestamp="2026-11-05T15:11:12.654Z" tests="5" failures="0" errors="0" time="0.057">
-    <testcase name="Server did not fail (status &lt; 500)" time="0.057" classname="PostsPostCreatePost"/>
-    <testcase name="Response time is below 3000 ms" time="0.057" classname="PostsPostCreatePost"/>
-    <testcase name="Status code is 201" time="0.057" classname="PostsPostCreatePost"/>
-    <testcase name="Id is assigned" time="0.057" classname="PostsPostCreatePost"/>
-    <testcase name="Sent fields are echoed back" time="0.057" classname="PostsPostCreatePost"/>
+  <testsuite name="Posts / POST create post" id="82723cd5-23a8-4b6d-9f3a-d6c592237494" timestamp="2026-11-06T14:48:12.948Z" tests="5" failures="0" errors="0" time="0.082">
+    <testcase name="Server did not fail (status &lt; 500)" time="0.082" classname="PostsPostCreatePost"/>
+    <testcase name="Response time is below 3000 ms" time="0.082" classname="PostsPostCreatePost"/>
+    <testcase name="Status code is 201" time="0.082" classname="PostsPostCreatePost"/>
+    <testcase name="Id is assigned" time="0.082" classname="PostsPostCreatePost"/>
+    <testcase name="Sent fields are echoed back" time="0.082" classname="PostsPostCreatePost"/>
   </testsuite>
-  <testsuite name="Posts / PUT update post" id="0be465b6-fb34-434c-980a-e2efec9280ba" timestamp="2026-11-05T15:11:12.654Z" tests="5" failures="0" errors="0" time="0.065">
-    <testcase name="Server did not fail (status &lt; 500)" time="0.065" classname="PostsPutUpdatePost"/>
-    <testcase name="Response time is below 3000 ms" time="0.065" classname="PostsPutUpdatePost"/>
-    <testcase name="Status code is 200" time="0.065" classname="PostsPutUpdatePost"/>
-    <testcase name="Content-Type is JSON" time="0.065" classname="PostsPutUpdatePost"/>
-    <testcase name="New title is returned" time="0.065" classname="PostsPutUpdatePost"/>
+  <testsuite name="Posts / PUT update post" id="f3abe980-8135-410c-a8fd-7df4b0434adf" timestamp="2026-11-06T14:48:12.948Z" tests="5" failures="0" errors="0" time="0.208">
+    <testcase name="Server did not fail (status &lt; 500)" time="0.208" classname="PostsPutUpdatePost"/>
+    <testcase name="Response time is below 3000 ms" time="0.208" classname="PostsPutUpdatePost"/>
+    <testcase name="Status code is 200" time="0.208" classname="PostsPutUpdatePost"/>
+    <testcase name="Content-Type is JSON" time="0.208" classname="PostsPutUpdatePost"/>
+    <testcase name="New title is returned" time="0.208" classname="PostsPutUpdatePost"/>
   </testsuite>
-  <testsuite name="Posts / PATCH partially update post" id="d835e2cd-ec50-4e15-b910-e209b14920f6" timestamp="2026-11-05T15:11:12.654Z" tests="5" failures="0" errors="0" time="0.055">
-    <testcase name="Server did not fail (status &lt; 500)" time="0.055" classname="PostsPatchPartiallyUpdatePost"/>
-    <testcase name="Response time is below 3000 ms" time="0.055" classname="PostsPatchPartiallyUpdatePost"/>
-    <testcase name="Status code is 200" time="0.055" classname="PostsPatchPartiallyUpdatePost"/>
-    <testcase name="Content-Type is JSON" time="0.055" classname="PostsPatchPartiallyUpdatePost"/>
-    <testcase name="Patched title is returned" time="0.055" classname="PostsPatchPartiallyUpdatePost"/>
+  <testsuite name="Posts / PATCH partially update post" id="c284bb5d-c979-4fa2-87d3-5d64fa031552" timestamp="2026-11-06T14:48:12.948Z" tests="5" failures="0" errors="0" time="0.081">
+    <testcase name="Server did not fail (status &lt; 500)" time="0.081" classname="PostsPatchPartiallyUpdatePost"/>
+    <testcase name="Response time is below 3000 ms" time="0.081" classname="PostsPatchPartiallyUpdatePost"/>
+    <testcase name="Status code is 200" time="0.081" classname="PostsPatchPartiallyUpdatePost"/>
+    <testcase name="Content-Type is JSON" time="0.081" classname="PostsPatchPartiallyUpdatePost"/>
+    <testcase name="Patched title is returned" time="0.081" classname="PostsPatchPartiallyUpdatePost"/>
   </testsuite>
-  <testsuite name="Posts / DELETE post" id="13b44229-a1d2-4960-9bbc-59869aef4ba9" timestamp="2026-11-05T15:11:12.654Z" tests="3" failures="0" errors="0" time="0.057">
-    <testcase name="Server did not fail (status &lt; 500)" time="0.057" classname="PostsDeletePost"/>
-    <testcase name="Response time is below 3000 ms" time="0.057" classname="PostsDeletePost"/>
-    <testcase name="Status code is 200 or 204" time="0.057" classname="PostsDeletePost"/>
+  <testsuite name="Posts / DELETE post" id="6e78a6ce-1d51-419e-a7ff-86e2fc453faa" timestamp="2026-11-06T14:48:12.948Z" tests="3" failures="0" errors="0" time="0.079">
+    <testcase name="Server did not fail (status &lt; 500)" time="0.079" classname="PostsDeletePost"/>
+    <testcase name="Response time is below 3000 ms" time="0.079" classname="PostsDeletePost"/>
+    <testcase name="Status code is 200 or 204" time="0.079" classname="PostsDeletePost"/>
   </testsuite>
-  <testsuite name="Scenario - chained requests / 1. Get users and remember the first id" id="8ca890ed-0c28-4c4e-af22-202b7ba31ff6" timestamp="2026-11-05T15:11:12.654Z" tests="5" failures="0" errors="0" time="0.030">
-    <testcase name="Server did not fail (status &lt; 500)" time="0.030" classname="ScenarioChainedRequests1GetUsersAndRememberTheFirstId"/>
-    <testcase name="Response time is below 3000 ms" time="0.030" classname="ScenarioChainedRequests1GetUsersAndRememberTheFirstId"/>
-    <testcase name="Status code is 200" time="0.030" classname="ScenarioChainedRequests1GetUsersAndRememberTheFirstId"/>
-    <testcase name="Content-Type is JSON" time="0.030" classname="ScenarioChainedRequests1GetUsersAndRememberTheFirstId"/>
-    <testcase name="Users list is not empty" time="0.030" classname="ScenarioChainedRequests1GetUsersAndRememberTheFirstId"/>
+  <testsuite name="Scenario - chained requests / 1. Get users and remember the first id" id="74f9fde3-689f-4ff9-8d63-412eefaaa5c4" timestamp="2026-11-06T14:48:12.948Z" tests="5" failures="0" errors="0" time="0.021">
+    <testcase name="Server did not fail (status &lt; 500)" time="0.021" classname="ScenarioChainedRequests1GetUsersAndRememberTheFirstId"/>
+    <testcase name="Response time is below 3000 ms" time="0.021" classname="ScenarioChainedRequests1GetUsersAndRememberTheFirstId"/>
+    <testcase name="Status code is 200" time="0.021" classname="ScenarioChainedRequests1GetUsersAndRememberTheFirstId"/>
+    <testcase name="Content-Type is JSON" time="0.021" classname="ScenarioChainedRequests1GetUsersAndRememberTheFirstId"/>
+    <testcase name="Users list is not empty" time="0.021" classname="ScenarioChainedRequests1GetUsersAndRememberTheFirstId"/>
   </testsuite>
-  <testsuite name="Scenario - chained requests / 2. Get posts of that user and remember the first post" id="02d3292c-47e0-42b1-9572-4fbb17d2ce61" timestamp="2026-11-05T15:11:12.654Z" tests="5" failures="0" errors="0" time="0.028">
-    <testcase name="Server did not fail (status &lt; 500)" time="0.028" classname="ScenarioChainedRequests2GetPostsOfThatUserAndRememberTheFirstPost"/>
-    <testcase name="Response time is below 3000 ms" time="0.028" classname="ScenarioChainedRequests2GetPostsOfThatUserAndRememberTheFirstPost"/>
-    <testcase name="Status code is 200" time="0.028" classname="ScenarioChainedRequests2GetPostsOfThatUserAndRememberTheFirstPost"/>
-    <testcase name="Content-Type is JSON" time="0.028" classname="ScenarioChainedRequests2GetPostsOfThatUserAndRememberTheFirstPost"/>
-    <testcase name="All posts belong to the saved user" time="0.028" classname="ScenarioChainedRequests2GetPostsOfThatUserAndRememberTheFirstPost"/>
+  <testsuite name="Scenario - chained requests / 2. Get posts of that user and remember the first post" id="214b363c-8189-4c0b-ac6d-94c12b2827bf" timestamp="2026-11-06T14:48:12.948Z" tests="5" failures="0" errors="0" time="0.026">
+    <testcase name="Server did not fail (status &lt; 500)" time="0.026" classname="ScenarioChainedRequests2GetPostsOfThatUserAndRememberTheFirstPost"/>
+    <testcase name="Response time is below 3000 ms" time="0.026" classname="ScenarioChainedRequests2GetPostsOfThatUserAndRememberTheFirstPost"/>
+    <testcase name="Status code is 200" time="0.026" classname="ScenarioChainedRequests2GetPostsOfThatUserAndRememberTheFirstPost"/>
+    <testcase name="Content-Type is JSON" time="0.026" classname="ScenarioChainedRequests2GetPostsOfThatUserAndRememberTheFirstPost"/>
+    <testcase name="All posts belong to the saved user" time="0.026" classname="ScenarioChainedRequests2GetPostsOfThatUserAndRememberTheFirstPost"/>
   </testsuite>
-  <testsuite name="Scenario - chained requests / 3. Get comments of that post" id="b50ddf67-9871-4649-b209-ebfb1e548ddd" timestamp="2026-11-05T15:11:12.654Z" tests="5" failures="0" errors="0" time="0.030">
-    <testcase name="Server did not fail (status &lt; 500)" time="0.030" classname="ScenarioChainedRequests3GetCommentsOfThatPost"/>
-    <testcase name="Response time is below 3000 ms" time="0.030" classname="ScenarioChainedRequests3GetCommentsOfThatPost"/>
-    <testcase name="Status code is 200" time="0.030" classname="ScenarioChainedRequests3GetCommentsOfThatPost"/>
-    <testcase name="Content-Type is JSON" time="0.030" classname="ScenarioChainedRequests3GetCommentsOfThatPost"/>
-    <testcase name="All comments belong to the saved post" time="0.030" classname="ScenarioChainedRequests3GetCommentsOfThatPost"/>
+  <testsuite name="Scenario - chained requests / 3. Get comments of that post" id="6084ced4-bea8-4bcf-b2c4-b3647c5ede1c" timestamp="2026-11-06T14:48:12.948Z" tests="5" failures="0" errors="0" time="0.027">
+    <testcase name="Server did not fail (status &lt; 500)" time="0.027" classname="ScenarioChainedRequests3GetCommentsOfThatPost"/>
+    <testcase name="Response time is below 3000 ms" time="0.027" classname="ScenarioChainedRequests3GetCommentsOfThatPost"/>
+    <testcase name="Status code is 200" time="0.027" classname="ScenarioChainedRequests3GetCommentsOfThatPost"/>
+    <testcase name="Content-Type is JSON" time="0.027" classname="ScenarioChainedRequests3GetCommentsOfThatPost"/>
+    <testcase name="All comments belong to the saved post" time="0.027" classname="ScenarioChainedRequests3GetCommentsOfThatPost"/>
   </testsuite>
-  <testsuite name="Scenario - chained requests / 4. Add a comment to that post" id="061a6bc3-b635-4768-b2f5-37edd3c371fd" timestamp="2026-11-05T15:11:12.654Z" tests="4" failures="0" errors="0" time="0.058">
-    <testcase name="Server did not fail (status &lt; 500)" time="0.058" classname="ScenarioChainedRequests4AddACommentToThatPost"/>
-    <testcase name="Response time is below 3000 ms" time="0.058" classname="ScenarioChainedRequests4AddACommentToThatPost"/>
-    <testcase name="Status code is 201" time="0.058" classname="ScenarioChainedRequests4AddACommentToThatPost"/>
-    <testcase name="Comment is linked to the saved post" time="0.058" classname="ScenarioChainedRequests4AddACommentToThatPost"/>
+  <testsuite name="Scenario - chained requests / 4. Add a comment to that post" id="d0298192-ea31-4bca-90f3-28e10a038114" timestamp="2026-11-06T14:48:12.948Z" tests="4" failures="0" errors="0" time="0.081">
+    <testcase name="Server did not fail (status &lt; 500)" time="0.081" classname="ScenarioChainedRequests4AddACommentToThatPost"/>
+    <testcase name="Response time is below 3000 ms" time="0.081" classname="ScenarioChainedRequests4AddACommentToThatPost"/>
+    <testcase name="Status code is 201" time="0.081" classname="ScenarioChainedRequests4AddACommentToThatPost"/>
+    <testcase name="Comment is linked to the saved post" time="0.081" classname="ScenarioChainedRequests4AddACommentToThatPost"/>
   </testsuite>
 </testsuites>
